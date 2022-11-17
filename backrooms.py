@@ -197,7 +197,7 @@ def save():
         str(key)
     ]
 
-    f = open("load.txt", "w")
+    f = open("loadbackrooms.txt", "w")
 
     for item in list:
         f.write(item+"\n")
@@ -591,7 +591,7 @@ while run:
         elif choice == "2":
             try:
 
-                f = open("load.txt", "r")
+                f = open("loadbackrooms.txt", "r")
                 load_list = f.readlines()
                 if len(load_list) == 9:
                     name = load_list[0]
